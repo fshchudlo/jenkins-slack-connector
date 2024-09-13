@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`runJenkinsPipelineOrDisplayParametersForm displays the parameters form 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": "Please, specify parameters",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "block_id": "param1",
+      "element": {
+        "action_id": "param1",
+        "initial_value": "",
+        "multiline": false,
+        "placeholder": undefined,
+        "type": "plain_text_input",
+      },
+      "label": {
+        "text": "Param1",
+        "type": "plain_text",
+      },
+      "type": "input",
+    },
+    {
+      "block_id": "pipelineId",
+      "elements": [
+        {
+          "action_id": "run_parameterized_jenkins_pipeline",
+          "style": "primary",
+          "text": {
+            "text": "Run",
+            "type": "plain_text",
+          },
+          "type": "button",
+          "value": "Pipeline Display Name",
+        },
+        {
+          "action_id": "display_cancellation_message",
+          "style": "danger",
+          "text": {
+            "text": "Cancel",
+            "type": "plain_text",
+          },
+          "type": "button",
+          "value": "Cancel",
+        },
+      ],
+      "type": "actions",
+    },
+  ],
+}
+`;
+
+exports[`runJenkinsPipelineOrDisplayParametersForm responds with an error message if running the parameterless pipeline fails 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": ":octagonal_sign: *Unable to run pipeline* 
+\`Error: Network error\`",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+  ],
+}
+`;
+
+exports[`runJenkinsPipelineOrDisplayParametersForm runs the parameterless pipeline 1`] = `":rocket: Here is the <http://example.com/job|Pipeline Display Name> pipeline that you run"`;

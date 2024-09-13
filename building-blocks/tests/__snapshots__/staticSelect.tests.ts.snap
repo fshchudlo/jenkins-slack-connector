@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`staticSelect should create a static select with the correct properties 1`] = `
+{
+  "block_id": "action_id",
+  "element": {
+    "action_id": "action_id",
+    "initial_option": {
+      "text": {
+        "text": "Option 1",
+        "type": "plain_text",
+      },
+      "value": "option1",
+    },
+    "options": [
+      {
+        "text": {
+          "text": "Option 1",
+          "type": "plain_text",
+        },
+        "value": "option1",
+      },
+      {
+        "text": {
+          "text": "Option 2",
+          "type": "plain_text",
+        },
+        "value": "option2",
+      },
+    ],
+    "placeholder": {
+      "text": "Choose an option",
+      "type": "plain_text",
+    },
+    "type": "static_select",
+  },
+  "label": {
+    "text": "Select an option",
+    "type": "plain_text",
+  },
+  "type": "input",
+}
+`;

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displayPipelineSelectionForm responds with the pipeline selection form 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": "Please, choose pipeline to run",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "block_id": "pipeline_name",
+      "element": {
+        "action_id": "pipeline_name",
+        "options": [
+          {
+            "text": {
+              "text": "Parameterless pipeline example",
+              "type": "plain_text",
+            },
+            "value": "job/Sandbox/job/parameterless-pipeline-example",
+          },
+          {
+            "text": {
+              "text": "Parameterized pipeline example",
+              "type": "plain_text",
+            },
+            "value": "job/Sandbox/job/parameterized-pipeline-example",
+          },
+          {
+            "text": {
+              "text": "Interactive pipeline example",
+              "type": "plain_text",
+            },
+            "value": "job/Sandbox/job/interactive-pipeline-example",
+          },
+        ],
+        "placeholder": {
+          "text": "Select an item",
+          "type": "plain_text",
+        },
+        "type": "static_select",
+      },
+      "label": {
+        "text": "Select an item",
+        "type": "plain_text",
+      },
+      "type": "input",
+    },
+    {
+      "block_id": "submit",
+      "elements": [
+        {
+          "action_id": "run_jenkins_pipeline",
+          "style": "primary",
+          "text": {
+            "text": "Run",
+            "type": "plain_text",
+          },
+          "type": "button",
+          "value": "run_jenkins_pipeline",
+        },
+        {
+          "action_id": "display_cancellation_message",
+          "style": "danger",
+          "text": {
+            "text": "Cancel",
+            "type": "plain_text",
+          },
+          "type": "button",
+          "value": "Cancel",
+        },
+      ],
+      "type": "actions",
+    },
+  ],
+}
+`;

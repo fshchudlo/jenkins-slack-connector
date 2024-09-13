@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displayJenkinsPendingInputForm updates the message with the failure form if Jenkins input is not pending 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": "<http://example.com/build|Build Name> requested the input, but it was submitted or timeout had been reached before I was able to handle it :crying_cat_face:",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+  ],
+  "channel": "CHANNEL_ID",
+  "ts": "1234567890.123456",
+}
+`;
+
+exports[`displayJenkinsPendingInputForm updates the message with the pending input form if Jenkins input is pending 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": "Input message",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+    {
+      "type": "divider",
+    },
+    {
+      "block_id": "someStringParam",
+      "element": {
+        "action_id": "someStringParam",
+        "initial_value": "",
+        "multiline": false,
+        "placeholder": {
+          "text": "Some string popup param",
+          "type": "plain_text",
+        },
+        "type": "plain_text_input",
+      },
+      "label": {
+        "text": "Some string param",
+        "type": "plain_text",
+      },
+      "type": "input",
+    },
+    {
+      "block_id": "someBooleanPopupParam",
+      "element": {
+        "action_id": "someBooleanPopupParam",
+        "options": [
+          {
+            "text": {
+              "text": "Some boolean popup param",
+              "type": "mrkdwn",
+            },
+            "value": "someBooleanPopupParam",
+          },
+        ],
+        "type": "checkboxes",
+      },
+      "label": {
+        "text": " ",
+        "type": "plain_text",
+      },
+      "type": "input",
+    },
+    {
+      "elements": [
+        {
+          "text": "Some boolean popup param",
+          "type": "mrkdwn",
+        },
+      ],
+      "type": "context",
+    },
+    {
+      "block_id": "http://example.com/build",
+      "elements": [
+        {
+          "action_id": "submit_pending_jenkins_input",
+          "style": "primary",
+          "text": {
+            "text": "Proceed",
+            "type": "plain_text",
+          },
+          "type": "button",
+          "value": "http://example.com/proceed",
+        },
+        {
+          "action_id": "abort_pending_jenkins_input",
+          "style": "danger",
+          "text": {
+            "text": "Abort",
+            "type": "plain_text",
+          },
+          "type": "button",
+          "value": "http://example.com/abort",
+        },
+      ],
+      "type": "actions",
+    },
+  ],
+  "channel": "CHANNEL_ID",
+  "ts": "1234567890.123456",
+}
+`;

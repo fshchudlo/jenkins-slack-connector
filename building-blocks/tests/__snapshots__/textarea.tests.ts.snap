@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`textarea should create a textarea with the correct properties 1`] = `
+{
+  "block_id": "action_id",
+  "element": {
+    "action_id": "action_id",
+    "initial_value": "initial value",
+    "multiline": true,
+    "placeholder": {
+      "text": "placeholder",
+      "type": "plain_text",
+    },
+    "type": "plain_text_input",
+  },
+  "label": {
+    "text": "Enter text",
+    "type": "plain_text",
+  },
+  "type": "input",
+}
+`;

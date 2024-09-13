@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`abortJenkinsPendingInput responds with an error message if aborting the input fails 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": ":octagonal_sign: *Input abort failed* 
+\`Error: Network error\`",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+  ],
+}
+`;

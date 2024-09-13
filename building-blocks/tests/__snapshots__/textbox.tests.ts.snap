@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`textbox should create a textbox with the correct properties 1`] = `
+{
+  "block_id": "action_id",
+  "element": {
+    "action_id": "action_id",
+    "initial_value": "initial value",
+    "multiline": false,
+    "placeholder": {
+      "text": "placeholder text",
+      "type": "plain_text",
+    },
+    "type": "plain_text_input",
+  },
+  "label": {
+    "text": "Enter text",
+    "type": "plain_text",
+  },
+  "type": "input",
+}
+`;
+
+exports[`textbox should handle empty initial_value and placeholder_text 1`] = `
+{
+  "block_id": "action_id",
+  "element": {
+    "action_id": "action_id",
+    "initial_value": "",
+    "multiline": false,
+    "placeholder": undefined,
+    "type": "plain_text_input",
+  },
+  "label": {
+    "text": "Enter text",
+    "type": "plain_text",
+  },
+  "type": "input",
+}
+`;

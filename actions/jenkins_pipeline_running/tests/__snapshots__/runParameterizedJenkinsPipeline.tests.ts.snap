@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`runParameterizedJenkinsPipeline responds with an error message if running the parameterized pipeline fails 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": ":octagonal_sign: *Unable to run pipeline* 
+\`Error: Network error\`",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+  ],
+}
+`;
+
+exports[`runParameterizedJenkinsPipeline runs the parameterized pipeline 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": ":rocket: Here is the <http://example.com/job|Pipeline Display Name> pipeline that you run.",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+    {
+      "elements": [
+        {
+          "text": "Submitted values:",
+          "type": "plain_text",
+        },
+      ],
+      "type": "context",
+    },
+    {
+      "elements": [
+        {
+          "text": "	• someStringParam: test",
+          "type": "plain_text",
+        },
+      ],
+      "type": "context",
+    },
+  ],
+}
+`;
+
+exports[`runParameterizedJenkinsPipeline runs the parameterized pipeline with no values 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": ":rocket: Here is the <http://example.com/job|Pipeline Display Name> pipeline that you run.",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+    {
+      "elements": [
+        {
+          "text": "Submitted values:",
+          "type": "plain_text",
+        },
+      ],
+      "type": "context",
+    },
+  ],
+}
+`;

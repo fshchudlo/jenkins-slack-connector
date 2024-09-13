@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button should create a button with the correct properties 1`] = `
+{
+  "action_id": "action_id",
+  "style": "primary",
+  "text": {
+    "text": "Click me",
+    "type": "plain_text",
+  },
+  "type": "button",
+  "value": "value",
+}
+`;

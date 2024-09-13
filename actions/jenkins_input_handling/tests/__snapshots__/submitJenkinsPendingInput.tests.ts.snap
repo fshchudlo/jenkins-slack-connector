@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`submitJenkinsPendingInput responds with an error message if submission fails 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": ":octagonal_sign: *Unable to submit input for the <http://example.com/build|build>* 
+\`Error: Network error\`",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+  ],
+}
+`;
+
+exports[`submitJenkinsPendingInput responds with submitted values 1`] = `
+{
+  "blocks": [
+    {
+      "text": {
+        "text": "Input was submitted to the <http://example.com/build|build> by test_user",
+        "type": "mrkdwn",
+      },
+      "type": "section",
+    },
+    {
+      "elements": [
+        {
+          "text": "Submitted values:",
+          "type": "plain_text",
+        },
+      ],
+      "type": "context",
+    },
+    {
+      "elements": [
+        {
+          "text": "	• someStringParam: test",
+          "type": "plain_text",
+        },
+      ],
+      "type": "context",
+    },
+  ],
+}
+`;
+
+exports[`submitJenkinsPendingInput responds without submitted values 1`] = `"Input was submitted to the <http://example.com/build|build> by test_user"`;

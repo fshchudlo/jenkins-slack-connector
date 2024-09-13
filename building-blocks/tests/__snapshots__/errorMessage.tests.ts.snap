@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`errorMessage should create an error message section 1`] = `
+[
+  {
+    "text": {
+      "text": ":octagonal_sign: *Something went wrong* 
+\`Error details\`",
+      "type": "mrkdwn",
+    },
+    "type": "section",
+  },
+]
+`;

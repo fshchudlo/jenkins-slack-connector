@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cancelButton should create a cancel button with the correct properties 1`] = `
+{
+  "action_id": "display_cancellation_message",
+  "style": "danger",
+  "text": {
+    "text": "Cancel",
+    "type": "plain_text",
+  },
+  "type": "button",
+  "value": "Cancel",
+}
+`;
+
+exports[`cancelButton should use the provided values if provided 1`] = `
+{
+  "action_id": "cancel_action",
+  "style": "warning",
+  "text": {
+    "text": "Don't do it",
+    "type": "plain_text",
+  },
+  "type": "button",
+  "value": "no",
+}
+`;
