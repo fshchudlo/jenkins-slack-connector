@@ -1,8 +1,6 @@
-# This is repo is not for production running. This is just a quick sample for my article about creating Slack bots.
-
 # jenkins-slack-connector
 
-Slack app [built on top of Slack Bolt](https://slack.dev/bolt-js/tutorial/getting-started) to run Jenkins pipelines with Slack commands
+### This repo is for [my article](https://ordinarytech.blog/integrate-jenkins-and-slack) about creating Slack bot to manage Jenkins pipelines
 
 ### Configuring dev environment
 
