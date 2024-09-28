@@ -6,7 +6,7 @@ export async function displayPipelineSelectionForm({ack, respond}: AllMiddleware
     await ack();
 
     const blocks = [
-        section("Please, choose pipeline to run"),
+        section("Please choose a pipeline to run"),
         divider(),
         pipelinesDropdown(),
         actionsBlock("submit", [

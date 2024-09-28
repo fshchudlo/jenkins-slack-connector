@@ -26,7 +26,7 @@ export async function runJenkinsPipelineOrDisplayParametersForm({context, body, 
 async function runParameterlessPipeline(jenkinsAPI: JenkinsAPI, pipelineId: string, pipelineDisplayName: string, respond: RespondFn) {
     try {
         const startedJobUrl = await jenkinsAPI.startJob(pipelineId);
-        await respond(`:rocket: Here is the ${link(pipelineDisplayName, startedJobUrl)} pipeline that you run`);
+        await respond(`:rocket: Here is the running ${link(pipelineDisplayName, startedJobUrl)} pipeline`);
     } catch (error) {
         await respond({blocks: errorMessage("Unable to run pipeline", error)});
     }

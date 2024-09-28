@@ -5,7 +5,7 @@ exports[`displayPipelineSelectionForm responds with the pipeline selection form 
   "blocks": [
     {
       "text": {
-        "text": "Please, choose pipeline to run",
+        "text": "Please choose a pipeline to run",
         "type": "mrkdwn",
       },
       "type": "section",

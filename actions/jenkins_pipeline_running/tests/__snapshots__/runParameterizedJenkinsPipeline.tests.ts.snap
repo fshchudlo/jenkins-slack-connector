@@ -20,7 +20,7 @@ exports[`runParameterizedJenkinsPipeline runs the parameterized pipeline 1`] = `
   "blocks": [
     {
       "text": {
-        "text": ":rocket: Here is the <http://example.com/job|Pipeline Display Name> pipeline that you run.",
+        "text": ":rocket: Here is the running <http://example.com/job|Pipeline Display Name> pipeline.",
         "type": "mrkdwn",
       },
       "type": "section",
@@ -52,7 +52,7 @@ exports[`runParameterizedJenkinsPipeline runs the parameterized pipeline with no
   "blocks": [
     {
       "text": {
-        "text": ":rocket: Here is the <http://example.com/job|Pipeline Display Name> pipeline that you run.",
+        "text": ":rocket: Here is the running <http://example.com/job|Pipeline Display Name> pipeline.",
         "type": "mrkdwn",
       },
       "type": "section",

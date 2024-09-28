@@ -13,7 +13,7 @@ export async function runParameterizedJenkinsPipeline({context, body, payload, a
 
         await respond({
             blocks: [
-                section(`:rocket: Here is the ${link(payload.value, startedJobUrl)} pipeline that you run.`),
+                section(`:rocket: Here is the running ${link(payload.value, startedJobUrl)} pipeline.`),
                 contextBlock(textBlock("Submitted values:")),
                 ...Object.entries(submittedValues).map(([key, value]) => contextBlock(textBlock(`\t• ${key}: ${value}`)))
             ]

@@ -73,4 +73,4 @@ exports[`runJenkinsPipelineOrDisplayParametersForm responds with an error messag
 }
 `;
 
-exports[`runJenkinsPipelineOrDisplayParametersForm runs the parameterless pipeline 1`] = `":rocket: Here is the <http://example.com/job|Pipeline Display Name> pipeline that you run"`;
+exports[`runJenkinsPipelineOrDisplayParametersForm runs the parameterless pipeline 1`] = `":rocket: Here is the running <http://example.com/job|Pipeline Display Name> pipeline"`;
