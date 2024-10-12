@@ -1,4 +1,4 @@
-import {submitJenkinsPendingInput} from "../../../actions";
+import {submitJenkinsPendingInput} from "../../index";
 import {JenkinsAPI} from "../../../jenkins-api/JenkinsAPI";
 
 jest.mock("../../../jenkins-api/JenkinsAPI");

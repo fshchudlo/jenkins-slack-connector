@@ -1,4 +1,4 @@
-import { displayPipelineSelectionForm } from "../../../actions";
+import { displayPipelineSelectionForm } from "../../index";
 
 describe("displayPipelineSelectionForm", () => {
     let ack: jest.Mock;

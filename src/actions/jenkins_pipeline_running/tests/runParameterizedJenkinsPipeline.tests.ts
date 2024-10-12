@@ -1,4 +1,4 @@
-import {runParameterizedJenkinsPipeline} from "../../../actions";
+import {runParameterizedJenkinsPipeline} from "../../index";
 import {JenkinsAPI} from "../../../jenkins-api/JenkinsAPI";
 
 jest.mock("../../../jenkins-api/JenkinsAPI");
