@@ -19,6 +19,9 @@
 ### Running the service
 - You can use provided `Dockerfile` to build an image and run it with ENV variables identical to variables
   specified in `.env.example` described above
+```bash
+docker build -t jenkins-slack-connector:latest .
+```
 
 ### Useful links
 - [Slack bolt getting started guide](https://slack.dev/bolt-js/tutorial/getting-started)
