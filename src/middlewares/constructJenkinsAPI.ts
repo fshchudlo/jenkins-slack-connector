@@ -1,9 +1,9 @@
-import { ModalView } from "@slack/bolt";
 import { ActionKeys } from "../actions";
 import { AppConfig } from "../app.config";
 import { divider, section, textbox } from "../building-blocks";
 import { JenkinsAPI } from "../jenkins-api/JenkinsAPI";
 import { CredentialsStore } from "../CredentialsStore";
+import {ModalView} from "@slack/types";
 
 export async function constructJenkinsAPI({context, client, body, next}) {
     const credentials = CredentialsStore.getCredentials(context.userId);

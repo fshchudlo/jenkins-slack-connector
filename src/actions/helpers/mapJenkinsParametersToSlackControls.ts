@@ -1,7 +1,7 @@
 import { checkboxGroup, contextBlock, staticSelect, textarea, textBlock, textbox } from "../../building-blocks";
 import { reformatHtml } from "./reformatHtml";
 import { JenkinsParameterDefinition } from "../../jenkins-api/JenkinsParameterDefinition";
-import { Block } from "@slack/bolt";
+import {Block} from "@slack/types";
 
 export function mapJenkinsParametersToSlackControls(parametersDefinition: JenkinsParameterDefinition[]): any[] {
     return parametersDefinition.flatMap(createParameterBlocks);
