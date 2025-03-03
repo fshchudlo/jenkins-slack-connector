@@ -18,19 +18,19 @@
   "author": "Fedor Shchudlo",
   "license": "Apache 2.0",
   "dependencies": {
-    "@slack/bolt": "^4.2.0",
-    "axios": "^1.7.9",
+    "@slack/bolt": "^4.2.1",
+    "axios": "^1.8.1",
     "dotenv": "^16.4.7",
     "ts-node": "^10.4.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.13.5",
+    "@types/node": "^22.13.8",
     "eslint": "^9.21.0",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.6",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.24.1"
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.25.0"
   }
 }
