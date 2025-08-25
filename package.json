@@ -26,11 +26,11 @@
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/jest": "^30.0.0",
-    "@types/node": "^24.2.1",
-    "eslint": "^9.33.0",
+    "@types/node": "^24.3.0",
+    "eslint": "^9.34.0",
     "jest": "^30.0.5",
     "ts-jest": "^29.4.1",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.39.0"
+    "typescript-eslint": "^8.40.0"
   }
 }
