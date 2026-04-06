@@ -1,16 +1,16 @@
 {
     "compilerOptions": {
         "target": "es2022",
-        "module": "commonjs",
+        "module": "preserve",
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
+        "strict": false,
+        "noImplicitAny": false,
         "strictNullChecks": false,
-        "moduleResolution": "node",
-        "outDir": "./dist",
-        "paths": {
-            "*": ["./node_modules/*"]
-        }
+        "moduleResolution": "bundler",
+        "noEmit": true,
+        "types": ["node", "jest"]
     },
     "include": ["./**/*.ts"],
     "exclude": ["./node_modules"]
