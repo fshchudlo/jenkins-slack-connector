@@ -13,3 +13,8 @@ updates:
       all-dependencies:      # Name of the group
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "typeorm"
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
