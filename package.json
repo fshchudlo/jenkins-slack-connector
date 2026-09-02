@@ -21,19 +21,19 @@
   "license": "Apache 2.0",
   "dependencies": {
     "@slack/bolt": "^5.0.0",
-    "axios": "^1.19.0",
+    "axios": "^1.20.0",
     "dotenv": "^17.4.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/jest": "^30.0.0",
-    "@types/node": "^26.2.0",
-    "eslint": "^10.9.0",
+    "@types/node": "^26.4.0",
+    "eslint": "^10.9.1",
     "globals": "^17.11.0",
-    "jest": "^30.4.2",
-    "tsx": "^4.23.12",
+    "jest": "^30.5.0",
+    "tsx": "^4.23.13",
     "ts-jest": "^29.4.12",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.67.0"
+    "typescript-eslint": "^8.68.0"
   }
 }
